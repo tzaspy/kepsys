@@ -1,0 +1,258 @@
+Version =19
+VersionRequired =19
+Checksum =1872518172
+Begin Form
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =161
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =10800
+    DatasheetFontHeight =10
+    ItemSuffix =7
+    Left =225
+    Top =1605
+    Right =11310
+    Bottom =9330
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x5b87a41b2914e540
+    End
+    GUID = Begin
+        0x37db3fecb83c63498f57c5486469aa68
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000002000000 ,
+        0x0000000000000000000000000000
+    End
+    Caption ="Επιστρεφομενες Αιτήσεις"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000100000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =161
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =9840
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xe3e5ea59c4ce3147a1e8c066758a3344
+            End
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =480
+                    Top =2400
+                    Width =9600
+                    Height =5040
+                    Name ="tbLogs"
+                    GUID = Begin
+                        0xdc1b748ee82e97458bffe4ae7a7866fe
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =480
+                            Top =2160
+                            Width =1320
+                            Height =240
+                            Name ="Label2"
+                            Caption ="Καταγραφή:"
+                            GUID = Begin
+                                0x2d1ddfa37fdcbe44b1959a30923d58fd
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =420
+                    Top =1080
+                    Width =3540
+                    Height =600
+                    TabIndex =1
+                    Name ="tbReturnedBarCodes"
+                    OnChange ="[Event Procedure]"
+                    GUID = Begin
+                        0xe9160b7636fc4b46bbec4cb6d91fadb6
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =420
+                            Top =840
+                            Width =1020
+                            Height =240
+                            Name ="Label4"
+                            Caption ="BarCode:"
+                            GUID = Begin
+                                0x9aa7c7f63114164ba11826036ff7d05b
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9480
+                    Top =8040
+                    Width =576
+                    Height =576
+                    TabIndex =2
+                    Name ="btnQuit"
+                    Caption ="Command5"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Close Form"
+                    GUID = Begin
+                        0xbd3be8eb5813a3429dafdcebb05dfde9
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2760
+                    Top =1740
+                    Width =1140
+                    TabIndex =3
+                    Name ="btlnClean"
+                    Caption =" Καθαρισμός"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xb56751f0c0ca854da9673b43e815915c
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Private logDateFormat As String
+Private rdb As requests_db
+Private r As requests_dao
+
+Private Sub btlnClean_Click()
+    cleanBarcode
+End Sub
+Private Sub cleanBarcode()
+    Forms!FrmInsertReturnedBarcodes!tbReturnedBarCodes.value = ""
+End Sub
+Private Sub Form_Load()
+Set rdb = New requests_db
+End Sub
+
+Private Sub tbReturnedBarCodes_Change()
+    Dim barcode As String
+    barcode = Forms!FrmInsertReturnedBarcodes!tbReturnedBarCodes.Text
+    If validateBarCode(barcode) Then
+        log "Αναγνωρίστηκε καταχώρηση του barcode '" & barcode & "'."
+        If rdb.barcodeExists(barcode) Then
+            If rdb.markCompleted(barcode) = 1 Then
+                If rdb.isUpdated Then
+                    log ("Το BarCode '" & barcode & "' καταχωρήθηκε ως οληκληρωμένο.")
+                Else
+                    log ("Το BarCode '" & barcode & "' υπάρχει στη βάση αλλά δεν είναι ενημερωμένο. " _
+                        & "Λείπει ένα η περισσότερα από τα πεδία: όνομα, επώνυμο, αριθμός άδειας.")
+                End If
+            End If
+        Else
+            log ("Το BarCode '" & barcode & "' δεν έχει καταχωρηθεί.")
+        End If
+        cleanBarcode
+    End If
+    
+End Sub
+
+
+Private Sub log(msg As String)
+    logDateFormat = "yyyy-mm-dd HH:mm:ss"
+    Forms!FrmInsertReturnedBarcodes!tbLogs.value = "" _
+        & Format(Now, logDateFormat) & ": " _
+        & msg & vbCrLf _
+        & Forms!FrmInsertReturnedBarcodes!tbLogs.value
+End Sub
+Private Sub btnQuit_Click()
+On Error GoTo Err_btnQuit_Click
+
+
+    DoCmd.Close
+
+Exit_btnQuit_Click:
+    Exit Sub
+
+Err_btnQuit_Click:
+    MsgBox Err.Description
+    Resume Exit_btnQuit_Click
+    
+End Sub

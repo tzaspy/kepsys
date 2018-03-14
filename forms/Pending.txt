@@ -1,0 +1,407 @@
+Version =19
+VersionRequired =19
+Checksum =466803538
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =161
+    TabularFamily =3
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9020
+    DatasheetFontHeight =10
+    ItemSuffix =16
+    Left =270
+    Top =600
+    Right =11070
+    Bottom =6405
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xc89701ad3314e540
+    End
+    GUID = Begin
+        0x69073dd8766f684391476c488fc87bb6
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000a003a1039f03a30320009103a303a403a5039d03 ,
+        0x9f039c0399039103000000000000000000000000000000000000000000000700 ,
+        0x000000000000000000000000000000000000ba03b503c0030000000000000000 ,
+        0x0000000000000000000000000000070000000000000000000000000000000000 ,
+        0x0000460031000000000000000000000000000000000000000000000007000000 ,
+        0x0000000000000000000000000000000046003200000000000000000000000000 ,
+        0x0000000000000000000007000000000000000000000000000000000000004600 ,
+        0x3300000000000000000000000000000000000000000000000700000000000000 ,
+        0x0000000000000000000000004600340000000000000000000000000000000000 ,
+        0x0000000000000c000000020000000000000000000000000000000000
+    End
+    RecordSource ="ΠΡΟΣ ΑΣΤΥΝΟΜΙΑ"
+    Caption ="ΠΡΟΣ ΑΣΤΥΝΟΜΙΑ"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa3050000a1050000a1050000a1050000000000003c2300002901000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c0090000397000001000900000000006400010007012c0101000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextFontCharSet =161
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =11
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Times New Roman Greek"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            Width =850
+            Height =850
+            BorderColor =8388608
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontCharSet =161
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial Greek"
+        End
+        Begin ListBox
+            TextFontCharSet =161
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Arial Greek"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontCharSet =161
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial Greek"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            ControlSource ="κεπ"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =903
+            Name ="Κεφαλίδα έκθεσης"
+            EventProcPrefix ="Κεφαλίδα_έκθεσης"
+            GUID = Begin
+                0xa047907849febd4e999804eaa2e7d399
+            End
+            Begin
+                Begin Label
+                    BackStyle =1
+                    Left =57
+                    Top =57
+                    Width =3648
+                    Height =504
+                    FontSize =20
+                    Name ="Ετικέτα10"
+                    Caption ="ΠΡΟΣ ΑΣΤΥΝΟΜΙΑ"
+                    GUID = Begin
+                        0x8ce75aa17c7c3b44afd0f303c09f9c47
+                    End
+                End
+                Begin Line
+                    BorderWidth =2
+                    Top =57
+                    Width =9020
+                    BorderColor =12632256
+                    Name ="Γραμμή13"
+                    GUID = Begin
+                        0xa415063de9ef3d4c9d14d001c68b8f0b
+                    End
+                End
+            End
+        End
+        Begin PageHeader
+            Height =414
+            Name ="Ενότητα κεφαλίδας σελίδας"
+            EventProcPrefix ="Ενότητα_κεφαλίδας_σελίδας"
+            GUID = Begin
+                0x764c0a5b3ec20c44b5acf38f9b294a0e
+            End
+            Begin
+                Begin Label
+                    Left =57
+                    Top =57
+                    Width =2166
+                    Height =300
+                    Name ="κεπ_Ετικέτα"
+                    Caption ="κεπ"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x01ca7716bdae1f4487807e10823e8ded
+                    End
+                End
+                Begin Label
+                    Left =2280
+                    Top =57
+                    Width =1653
+                    Height =300
+                    Name ="F1_Ετικέτα"
+                    Caption ="barcode"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x932dd4f48e8e42418f902537fb6c7f12
+                    End
+                End
+                Begin Label
+                    Left =3990
+                    Top =57
+                    Width =1653
+                    Height =300
+                    Name ="F2_Ετικέτα"
+                    Caption ="Ονομα"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x32d239e724e69245a0e4ef610ee199de
+                    End
+                End
+                Begin Label
+                    Left =5700
+                    Top =57
+                    Width =1653
+                    Height =300
+                    Name ="F3_Ετικέτα"
+                    Caption ="Επωνυμο"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x1861a358ac645b468e180699b1a6ba99
+                    End
+                End
+                Begin Label
+                    Left =7410
+                    Top =57
+                    Width =1553
+                    Height =300
+                    Name ="F4_Ετικέτα"
+                    Caption ="Αρ.Αδειας"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x8d5ebaec1af67c479132b51cf2a1777d
+                    End
+                End
+                Begin Line
+                    BorderWidth =2
+                    Width =9020
+                    Name ="Γραμμή14"
+                    GUID = Begin
+                        0xcf88a6e74eaca0458004a656a3fdf99a
+                    End
+                End
+                Begin Line
+                    BorderWidth =2
+                    Top =414
+                    Width =9020
+                    Name ="Γραμμή15"
+                    GUID = Begin
+                        0x7ca7cd954654fc4eaa6320951fec80be
+                    End
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =381
+            Name ="Κεφαλίδα ομάδας0"
+            EventProcPrefix ="Κεφαλίδα_ομάδας0"
+            GUID = Begin
+                0x9bcc3d47e573e944a2a562cfc42954ab
+            End
+            Begin
+                Begin TextBox
+                    FontItalic = NotDefault
+                    DecimalPlaces =0
+                    TextFontFamily =18
+                    IMESentenceMode =3
+                    Left =57
+                    Width =2166
+                    Height =324
+                    FontSize =11
+                    ForeColor =8388608
+                    Name ="κεπ"
+                    ControlSource ="κεπ"
+                    FontName ="Times New Roman Greek"
+                    GUID = Begin
+                        0x7788abb3313f3a4bb41063c1c4a9ff03
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =297
+            Name ="Λεπτομέρεια"
+            GUID = Begin
+                0x2be5c4aab154304a88b6833fb315b251
+            End
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =2280
+                    Width =1653
+                    ColumnWidth =1548
+                    Name ="F1"
+                    ControlSource ="F1"
+                    GUID = Begin
+                        0x1155d2ff9456f942b8aae51d0af5c39b
+                    End
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =3990
+                    Width =1653
+                    TabIndex =1
+                    Name ="F2"
+                    ControlSource ="F2"
+                    GUID = Begin
+                        0x5866d060f1e58d4b90df67ab49bf8556
+                    End
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =5700
+                    Width =1653
+                    TabIndex =2
+                    Name ="F3"
+                    ControlSource ="F3"
+                    GUID = Begin
+                        0xacb3fc5a503a9c46b9140be2de48b06b
+                    End
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =7410
+                    Width =1553
+                    TabIndex =3
+                    Name ="F4"
+                    ControlSource ="F4"
+                    GUID = Begin
+                        0x28f499ca00fc904fb084bbf7e624d732
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =480
+            Name ="Ενότητα υποσέλιδου σελίδας"
+            EventProcPrefix ="Ενότητα_υποσέλιδου_σελίδας"
+            GUID = Begin
+                0x03b45d547ddf4f4cbe5c2930b330bd38
+            End
+            Begin
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    IMESentenceMode =3
+                    Left =57
+                    Top =228
+                    Width =4396
+                    Height =252
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="Κείμενο11"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+                    FontName ="Times New Roman Greek"
+                    GUID = Begin
+                        0x91cf6bc07029a94e80df416fe09a2272
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =18
+                    IMESentenceMode =3
+                    Left =4567
+                    Top =228
+                    Width =4396
+                    Height =252
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =8388608
+                    Name ="Κείμενο12"
+                    ControlSource ="=\"Σελίδα \" & [Page] & \" από \" & [Pages]"
+                    FontName ="Times New Roman Greek"
+                    GUID = Begin
+                        0x792c40718735234db1f4fb5e95f161a1
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Υποσέλιδο έκθεσης"
+            EventProcPrefix ="Υποσέλιδο_έκθεσης"
+            GUID = Begin
+                0x346ccfa30739bb478497243e979c4909
+            End
+        End
+    End
+End

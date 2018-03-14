@@ -1,0 +1,185 @@
+Version =19
+VersionRequired =19
+Checksum =2110390316
+Begin Form
+    AllowFilters = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    TabularCharSet =161
+    TabularFamily =124
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =10080
+    DatasheetFontHeight =10
+    ItemSuffix =5
+    Left =300
+    Top =75
+    Right =16455
+    Bottom =12315
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xaa9cbb833d13e540
+    End
+    GUID = Begin
+        0x9fcfca59f558c54bbf2afd4a5b25f6c9
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000002000000 ,
+        0x0000000000000000000000000000
+    End
+    Caption ="Αρχικό Μενού"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000100000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =161
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =8640
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x498f9d8687626e4a8a4a1e53a867fdf5
+            End
+            Begin
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =1440
+                    Top =1440
+                    Width =5760
+                    Height =840
+                    FontSize =15
+                    Name ="btnInsertNewBarcode"
+                    Caption ="Καταχώρηση νέου BarCode"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xa7e1e5df51f3504caba4cfa9b5e94573
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =1440
+                    Top =2220
+                    Width =5760
+                    Height =840
+                    FontSize =15
+                    TabIndex =1
+                    Name ="btnImportDataFromSystem"
+                    Caption ="Εισαγωγή στοιχείων από το Σύστημα"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x1aa7e9fc4cc39147bae1a20b27edd5f6
+                    End
+                End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    Left =1440
+                    Top =4920
+                    Width =5760
+                    Height =840
+                    FontSize =15
+                    TabIndex =2
+                    Name ="btnPendingBarcodes"
+                    Caption ="Εκκρεμείς αιτήσεις"
+                    GUID = Begin
+                        0x82805badaa249f4988b7b4a05946fe77
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =1440
+                    Top =5760
+                    Width =5760
+                    Height =840
+                    FontSize =15
+                    TabIndex =3
+                    Name ="btnCompletedRequests"
+                    Caption ="Ολοκληρωμένες αιτήσεις"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x9c48bc0a5cd669478630161e5d9c6c60
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =1440
+                    Top =3060
+                    Width =5760
+                    Height =840
+                    FontSize =15
+                    TabIndex =4
+                    Name ="btnRegisterReturnedRequests"
+                    Caption ="Εισαγωγή επιστρεφόμενων BarCode"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x251784909b22c14686dcb2bcf5053f02
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub btnCompletedRequests_Click()
+    DoCmd.OpenForm "frmParametersforCompleted"
+End Sub
+
+Private Sub btnImportDataFromSystem_Click()
+    DoCmd.OpenForm "FrmInsertUpdates"
+End Sub
+
+Private Sub btnInsertNewBarcode_Click()
+    DoCmd.OpenForm "DlgInsertNewBarCode"
+End Sub
+
+Private Sub btnRegisterReturnedRequests_Click()
+    DoCmd.OpenForm "FrmInsertReturnedBarcodes"
+End Sub
+
+Private Sub Form_Load()
+    DoCmd.Maximize
+End Sub

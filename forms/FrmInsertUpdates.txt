@@ -1,0 +1,252 @@
+Version =19
+VersionRequired =19
+Checksum =1069709390
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =161
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =8640
+    DatasheetFontHeight =10
+    ItemSuffix =6
+    Left =900
+    Top =510
+    Right =9540
+    Bottom =4815
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x54cc90b4c913e540
+    End
+    GUID = Begin
+        0x3b3cf4248628284d926b5ceea935f885
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000002000000 ,
+        0x0000000000000000000000000000
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000100000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =161
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =4320
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xc51af8944860434280b67c02c44a966b
+            End
+            Begin
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =240
+                    Top =480
+                    Width =7320
+                    Height =2760
+                    Name ="txtCopiedPage"
+                    BeforeUpdate ="[Event Procedure]"
+                    AfterUpdate ="[Event Procedure]"
+                    GUID = Begin
+                        0xbdc6478fac8c784c866dd5d5e34d9d90
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =240
+                            Top =240
+                            Width =2220
+                            Height =240
+                            Name ="Label1"
+                            Caption ="Δεδομένα από ιστοσελίδα:"
+                            GUID = Begin
+                                0x99709dbc93b9334d981c3b4396afcdbf
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5400
+                    Top =3420
+                    Width =1800
+                    Height =405
+                    TabIndex =1
+                    Name ="btImportData"
+                    Caption ="Εισαγωγή"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x8c4cc020654e08439da2f4e62cd91987
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3420
+                    Top =3420
+                    Width =1800
+                    Height =405
+                    TabIndex =2
+                    Name ="btnClean"
+                    Caption =" Καθαρισμός"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x8e623fa2f87938479f751848c50b5794
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =7620
+                    Top =3660
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="btnQuit"
+                    Caption ="Command5"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Close Form"
+                    GUID = Begin
+                        0x14be3502597c0b4391c8e94a9653e4a9
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private orgPage As String
+
+Private Sub btImportData_Click()
+On Error GoTo Err_btImportData_Click
+
+    Dim csv As kinisiCSV
+    
+    If IsNull(Forms!FrmInsertUpdates!txtCopiedPage.value) Then
+        Err.Description = "Η φόρμα δεν μπορεί να είναι κενή. Διαβάστε τις οδηγίες."
+        GoTo Err_btImportData_Click
+    End If
+    
+    
+    Set csv = New kinisiCSV
+    
+    csv.parse (Forms!FrmInsertUpdates!txtCopiedPage.value)
+    
+    msg = "Διαβάστηκαν " & csv.rowsCount & " γραμμές από τον πίνακα που εισάγατε." & vbCrLf _
+         & "Από αυτές αναγνωρίστηκαν και ενημερώθηκαν " & csv.RowsUpdated & " εγγραφές."
+
+    MsgBox msg, vbInformation, "Αποτέλεσμα εισαγωγής"
+
+Exit_btImportData_Click:
+    Exit Sub
+
+Err_btImportData_Click:
+    MsgBox Err.Description
+    GoTo Exit_btImportData_Click
+    
+End Sub
+
+
+' Unfortunately MS Access trims trailing spaces after update.
+' We need to temporarily save the text before the update and add at the end a character
+' to prevent MS Access to trim the trailling spaces
+Private Sub btnClean_Click()
+  Forms!FrmInsertUpdates!txtCopiedPage.value = Null
+End Sub
+
+' Here we re-update value of the text box. We also add a line and a space, assuming that
+' our code can ignore this.
+Private Sub txtCopiedPage_AfterUpdate()
+ Forms!FrmInsertUpdates!txtCopiedPage.value = orgPage & vbCrLf & "-"
+End Sub
+
+Private Sub txtCopiedPage_BeforeUpdate(Cancel As Integer)
+    orgPage = Me!txtCopiedPage.Text
+End Sub
+Private Sub btnQuit_Click()
+On Error GoTo Err_btnQuit_Click
+
+
+    DoCmd.Close
+
+Exit_btnQuit_Click:
+    Exit Sub
+
+Err_btnQuit_Click:
+    MsgBox Err.Description
+    Resume Exit_btnQuit_Click
+    
+End Sub

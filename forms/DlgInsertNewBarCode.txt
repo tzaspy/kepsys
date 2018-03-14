@@ -1,0 +1,308 @@
+Version =19
+VersionRequired =19
+Checksum =1154878600
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =161
+    TabularFamily =124
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =8340
+    DatasheetFontHeight =10
+    ItemSuffix =9
+    Left =15
+    Top =60
+    Right =8355
+    Bottom =3345
+    DatasheetGridlinesColor =12632256
+    OnUnload ="[Event Procedure]"
+    RecSrcDt = Begin
+        0x987de2e13d13e540
+    End
+    GUID = Begin
+        0xad39ff85433c8e4d85b48c6b8044e9bc
+    End
+    NameMap = Begin
+        0x0acc0e550000000096480cd47a32fe4ea72160b762e6c8bd00000000d3f35aa9 ,
+        0x3314e54000000000000000006b00650070000000000000006ac6ff4b32414547 ,
+        0x8ffc05bae5b2e8c30700000096480cd47a32fe4ea72160b762e6c8bd70005f00 ,
+        0x62006f006400790069006400000000000000b76e7b721bacbb4198e89e0ad9c7 ,
+        0x0d3e0700000096480cd47a32fe4ea72160b762e6c8bd61006c00690061007300 ,
+        0x0000000000007bf7dedb3e4224409e7f041f4b66e69b0700000096480cd47a32 ,
+        0xfe4ea72160b762e6c8bd46004f0052004d0041004c005f0043004f0044004500 ,
+        0x000000000000000000000000000000000000000000000c000000020000000000 ,
+        0x000000000000000000000000
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000100000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =161
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =3300
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xb1439eb03fae8844b94bb913d5ccaa9f
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2580
+                    Top =1020
+                    Width =3780
+                    Height =300
+                    FontSize =11
+                    Name ="BarCode"
+                    ValidationRule ="Like \"#############\""
+                    ValidationText ="Το BarCode πρέπει να έχει 13 αριθμούς"
+                    GUID = Begin
+                        0x932cffe7e744ef489a5b5b2433dd380d
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =660
+                            Top =1020
+                            Width =1380
+                            Height =240
+                            FontSize =11
+                            Name ="lblBarcode"
+                            Caption ="BarCode:"
+                            GUID = Begin
+                                0xf227a6a6a69e3e48b52066cccea579d4
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =6225
+                    Left =2580
+                    Top =1380
+                    Width =3780
+                    Height =360
+                    TabIndex =1
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0xc9c56e3030fc6c48a5fbdd36c5dc8299
+                    End
+                    Name ="cbKep"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT kep.p_bodyid, kep.alias FROM kep WHERE is_active=True ORDER BY [FORMAL_CO"
+                        "DE]; "
+                    ColumnWidths ="0;7200"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =660
+                            Top =1380
+                            Width =1380
+                            Height =245
+                            FontSize =11
+                            Name ="lblkep"
+                            Caption ="ΚΕΠ"
+                            GUID = Begin
+                                0xc884921ff5777e4b8bf7bb0e68f9ca2f
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =540
+                    Top =240
+                    Width =5760
+                    Height =420
+                    FontSize =18
+                    Name ="lblInsertBarCode"
+                    Caption ="Εισαγωγή  BarCode"
+                    GUID = Begin
+                        0xf66db5bf0ef3dd4db48723df65e2c042
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5160
+                    Top =1800
+                    Width =1155
+                    Height =405
+                    TabIndex =2
+                    Name =" InsertNewBarcode"
+                    Caption ="Καταχώρηση"
+                    OnClick ="[Event Procedure]"
+                    EventProcPrefix ="Ctl_InsertNewBarcode"
+                    GUID = Begin
+                        0xa66a2dea904cf547aaff901551bce4db
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6600
+                    Top =2520
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="btnQuit"
+                    Caption ="Command8"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Close Form"
+                    GUID = Begin
+                        0x0ae5b4914939ab46b60a177af4322d01
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Private rdb As requests_db
+
+Private Sub Ctl_InsertNewBarcode_Click()
+On Error GoTo Err_Ctl_InsertNewBarcode_Click
+
+    Dim barcode As String
+    Dim kepcode As Long
+    Dim errorMessage As String
+    
+' Validation Rulues - Not null
+
+    If IsNull(Forms!DlgInsertNewBarCode!barcode.value) Then
+        errorMessage = "Το barcode πρέπει να έχει μια τιμή."
+        GoTo Exit_DuplicateBarCode
+    End If
+    
+    
+    If IsNull(Forms!DlgInsertNewBarCode!cbKep.value) Then
+        errorMessage = "Το ΚΕΠ πρέπει να έχει μια τιμή."
+        GoTo Exit_DuplicateBarCode
+    End If
+ 
+   
+    barcode = Forms!DlgInsertNewBarCode!barcode.value
+    kepcode = CLng(Forms!DlgInsertNewBarCode!cbKep.value)
+
+    rdb.insertBarcode barcode, kepcode
+    
+
+' Clean the form
+
+    Forms!DlgInsertNewBarCode!barcode.value = Null
+    Forms!DlgInsertNewBarCode!cbKep.value = Null
+
+
+Exit_Ctl_InsertNewBarcode_Click:
+    Exit Sub
+
+Exit_DuplicateBarCode:
+    MsgBox errorMessage, vbExclamation, "Ανεπιτυχής εισαγωγή"
+    Exit Sub
+
+Err_Ctl_InsertNewBarcode_Click:
+    MsgBox Err.Description
+    Resume Exit_Ctl_InsertNewBarcode_Click
+    
+End Sub
+
+Private Sub Form_Load()
+    Set rdb = New requests_db
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+    Set rdb = Nothing
+End Sub
+Private Sub btnQuit_Click()
+On Error GoTo Err_btnQuit_Click
+
+
+    DoCmd.Close
+
+Exit_btnQuit_Click:
+    Exit Sub
+
+Err_btnQuit_Click:
+    MsgBox Err.Description
+    Resume Exit_btnQuit_Click
+    
+End Sub

@@ -1,0 +1,574 @@
+Version =19
+VersionRequired =19
+Checksum =234182370
+Begin Form
+    NavigationButtons = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =161
+    TabularFamily =48
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    DatasheetFontHeight =10
+    ItemSuffix =20
+    Left =2625
+    Top =3945
+    Right =10110
+    Bottom =9690
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xb05f89c54914e540
+    End
+    GUID = Begin
+        0x8dce610c6c882d43926740612993d954
+    End
+    NameMap = Begin
+        0x0acc0e550000000058e54ada7d68f4498d0fc1146aa48adb000000007b50eed2 ,
+        0x5e14e54000000000000000007200650071007500650073007400730000000000 ,
+        0x0000000000000000000000000000000000000c00000002000000000000000000 ,
+        0x0000000000000000
+    End
+    RecordSource ="requests"
+    Caption ="Επιστρεφόμενες Αιτήσεις από ΚΕΠ"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000100000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =161
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            TextFontCharSet =161
+            FontName ="Tahoma"
+        End
+        Begin CustomControl
+            SpecialEffect =2
+        End
+        Begin Section
+            Height =5760
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x0e9e48b8db87a242b7f6428a34410124
+            End
+            Begin
+                Begin OptionGroup
+                    OverlapFlags =85
+                    Left =1440
+                    Top =1380
+                    Width =3660
+                    Height =1710
+                    Name ="optSelectDate"
+                    AfterUpdate ="[Event Procedure]"
+                    GUID = Begin
+                        0x7487c2c4c4647545ad30f55358d8edfe
+                    End
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            Left =1560
+                            Top =1260
+                            Width =2550
+                            Height =240
+                            BackColor =-2147483633
+                            Name ="Label6"
+                            Caption ="Επιλογή ημερομηνίας για αναφορά"
+                            GUID = Begin
+                                0xd26512ccc3f035498baac448b62f47be
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =1920
+                            Top =1680
+                            Width =735
+                            OptionValue =1
+                            Name ="Option7"
+                            GUID = Begin
+                                0x9162fa3596d58542af8c9e294c724ee0
+                            End
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =2280
+                                    Top =1680
+                                    Width =2760
+                                    Height =240
+                                    Name ="lblsincelasttime"
+                                    Caption ="Όλες μετά την τελευταία εκτύπωση"
+                                    GUID = Begin
+                                        0x90d6f8af5bcf1b408f69c7274ae842d3
+                                    End
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =1920
+                            Top =2190
+                            Width =735
+                            OptionValue =2
+                            Name ="Option9"
+                            GUID = Begin
+                                0x3215e3ec29f6924785d1b23eca1a5061
+                            End
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =2280
+                                    Top =2160
+                                    Width =2760
+                                    Height =240
+                                    Name ="lbltoday"
+                                    Caption ="Ολοκληρωμένες σήμερα"
+                                    GUID = Begin
+                                        0xa6a95635858b0d4f892435af031c2a82
+                                    End
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =1920
+                            Top =2670
+                            Width =735
+                            OptionValue =3
+                            Name ="Option11"
+                            GUID = Begin
+                                0x145d6cf107f9294fbde701f2aa113693
+                            End
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =2280
+                                    Top =2640
+                                    Width =2760
+                                    Height =240
+                                    Name ="lblcustom"
+                                    Caption ="Επιλογή ημερομηνίας"
+                                    GUID = Begin
+                                        0xc99b733f4b75844ebaaaaa6ee19c0ea3
+                                    End
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2880
+                    Top =3360
+                    Width =2160
+                    TabIndex =1
+                    Name ="tbDateStart"
+                    GUID = Begin
+                        0xb6b556fb632f99438c5bde7040e4a993
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2220
+                            Top =3360
+                            Width =645
+                            Height =240
+                            Name ="lblDateStart"
+                            Caption ="Από:"
+                            GUID = Begin
+                                0x73619592df0bc44aa95d6ff3d66ebab1
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2880
+                    Top =3720
+                    Width =2160
+                    TabIndex =2
+                    Name ="tbDateEnd"
+                    GUID = Begin
+                        0x221518f2e008914a8ed8b43670babf6f
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2220
+                            Top =3720
+                            Width =645
+                            Height =240
+                            Name ="lblDateEnd"
+                            Caption ="Εώς:"
+                            GUID = Begin
+                                0x63c77289f18d9244bef64584b093478f
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3660
+                    Top =4200
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="cbOpentRptCompleted"
+                    Caption ="Command17"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070700000000000000000000000000000000000000 ,
+                        0x000000000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070700fffb030000070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070707070000f806070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070700fffb030000070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070707070000f806070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070700fffb030000070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070707070000f806070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070700fffb030000070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706060607060706 ,
+                        0x070607000707070707070707070000f806070600000000000000000000000000 ,
+                        0x060706000707070707070707000000f807060700ffffffffffffffffffffff00 ,
+                        0x070607000707070707070700fffb030000070600ffffffffffffffffffffff00 ,
+                        0x060706000707070707070707000000f807060700ffffffffffffffffffffff00 ,
+                        0x070607000707070707070707070000f806070600000000000000000000000000 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070700fffb030000070607060706070607060706070607 ,
+                        0x060706000707070707070707000000f807060706070607060706070607060706 ,
+                        0x070607000707070707070707070000f806070607060706070607060706070607 ,
+                        0x0607060007070707070707070700000000000000000000000000000000000000 ,
+                        0x0000000007070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707000000000000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003000100000000bf00000000bf0000bfbf00000000bf00bf00bf0000bfbf00 ,
+                        0xc0c0c000c0dcc000a4c8f0000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000fffbf000 ,
+                        0xa0a0a40080808000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Preview Report"
+                    GUID = Begin
+                        0xad2951316513474c9dd8d21d2f08d11e
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5040
+                    Top =4200
+                    Width =516
+                    Height =606
+                    TabIndex =4
+                    Name ="btnQuit"
+                    Caption ="Command18"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Close Form"
+                    GUID = Begin
+                        0x106d6cfe3119914ba62510e4e836b2e8
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4380
+                    Top =4200
+                    Width =576
+                    Height =576
+                    TabIndex =5
+                    Name ="btnPrint2PDF"
+                    Caption ="Command19"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaad00000000000dadd0888888888080da ,
+                        0x000000000000080d0888888bbb88000a088888877788080d0000000000000880 ,
+                        0x0888888888808080d000000000080800ad0ffffffff08080dad0f00000f0000a ,
+                        0xada0ffffffff0daddada0f00000f0adaadad0ffffffff0addadad000000000da ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Print Report"
+                    GUID = Begin
+                        0xf5502046720cb642ab1548d84447ae1c
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private lastPrint As String
+Private dateformat As String
+
+Private Sub Form_Load()
+    lastPrint = getConfig("lastPrint")
+    dateformat = getConfig("FormatDate")
+    
+    Forms!frmparametersforcompleted!optSelectDate.value = 1
+    isEnabled = False
+    start_date = lastPrint
+    end_date = Format(Now(), dateformat)
+    Forms!frmparametersforcompleted!tbDateStart.Enabled = isEnabled
+    Forms!frmparametersforcompleted!tbDateEnd.Enabled = isEnabled
+    Forms!frmparametersforcompleted!tbDateStart.value = start_date
+    Forms!frmparametersforcompleted!tbDateEnd.value = end_date
+
+End Sub
+
+Private Sub optSelectDate_AfterUpdate()
+    Dim m_option As Byte
+    Dim isEnabled As Boolean
+    isEnabled = False
+    m_option = Forms!frmparametersforcompleted!optSelectDate.value
+    
+    Select Case m_option
+        Case 1
+            isEnabled = False
+            start_date = lastPrint
+            end_date = Format(Now(), dateformat)
+        Case 2
+            isEnabled = False
+            start_date = Left(Format(Now(), dateformat), 11) & "00:00:00"
+            end_date = Format(Now(), dateformat)
+        Case 3
+            isEnabled = True
+            start_date = lastPrint
+            end_date = Format(Now(), dateformat)
+    End Select
+    
+    Forms!frmparametersforcompleted!tbDateStart.Enabled = isEnabled
+    Forms!frmparametersforcompleted!tbDateEnd.Enabled = isEnabled
+    Forms!frmparametersforcompleted!tbDateStart.value = start_date
+    Forms!frmparametersforcompleted!tbDateEnd.value = end_date
+    
+
+End Sub
+Private Sub cbOpentRptCompleted_Click()
+On Error GoTo Err_cbOpentRptCompleted_Click
+
+    Dim stDocName As String
+
+    
+    stDocName = "Completed"
+    DoCmd.OpenReport stDocName, acPreview
+
+Exit_cbOpentRptCompleted_Click:
+    Exit Sub
+
+Err_cbOpentRptCompleted_Click:
+    MsgBox Err.Description
+    Resume Exit_cbOpentRptCompleted_Click
+    
+End Sub
+Private Sub btnQuit_Click()
+On Error GoTo Err_btnQuit_Click
+
+
+    DoCmd.Close
+
+Exit_btnQuit_Click:
+    Exit Sub
+
+Err_btnQuit_Click:
+    MsgBox Err.Description
+    Resume Exit_btnQuit_Click
+    
+End Sub
+Private Sub btnPrint2PDF_Click()
+On Error GoTo Err_btnPrint2PDF_Click
+
+    Dim stDocName As String
+    Dim filename As String
+    Dim b As Boolean
+    Dim folder As String
+    Dim dt As String
+    Dim dateformat As String
+
+    stDocName = "Completed"
+    dateformat = getConfig("FormatDate")
+    dt = Format(Forms!frmparametersforcompleted!tbDateEnd.value, "yyyy-mm-dd")
+    folder = getConfig("reporDirectory")
+    
+    b = ConvertReportToPDF("Completed", vbNullString, _
+folder & "/" & stDocName & "_" & dt & ".pdf", False, True, 150, "", "", 0, 0, 0)
+    
+    If b = True Then
+        setLastprint (Format(Now(), dateformat))
+    End If
+        
+Debug.Print b
+Exit_btnPrint2PDF_Click:
+    Exit Sub
+
+Err_btnPrint2PDF_Click:
+    MsgBox Err.Description
+    Resume Exit_btnPrint2PDF_Click
+    
+End Sub
