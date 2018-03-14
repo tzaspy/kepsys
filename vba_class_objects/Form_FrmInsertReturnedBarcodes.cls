@@ -22,6 +22,7 @@ Private Sub Form_Load()
 Set rdb = New requests_db
 End Sub
 
+
 Private Sub tbReturnedBarCodes_Change()
     Dim barcode As String
     barcode = Forms!FrmInsertReturnedBarcodes!tbReturnedBarCodes.Text
@@ -65,4 +66,18 @@ Err_btnQuit_Click:
     MsgBox Err.Description
     Resume Exit_btnQuit_Click
     
+End Sub
+
+Private Sub tbReturnedBarCodes_KeyDown(KeyCode As Integer, Shift As Integer)
+    If KeyCode = 13 Then
+        KeyCode = 0
+    End If
+End Sub
+
+Private Sub tbReturnedBarCodes_KeyPress(KeyAscii As Integer)
+
+End Sub
+
+Private Sub tbReturnedBarCodes_KeyUp(KeyCode As Integer, Shift As Integer)
+
 End Sub
