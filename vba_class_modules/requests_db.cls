@@ -202,37 +202,59 @@ End Function
 Private Function getMatchedBarcodes(data() As requests_dao) As Variant
     Dim serial_barcodes As String
     Dim i As Integer
-    Dim r As Variant
     Dim rows() As requests_dao
+    Dim batchSize As Integer
+    Dim m, l, r As Integer
     
-    ' Serialize the barcodes to make parameter in the query
-    serial_barcodes = ""
-    For Each r In data
-        If serial_barcodes = "" Then
-            serial_barcodes = """" & r.barcode & """"
-        Else
-            serial_barcodes = serial_barcodes & ",""" & r.barcode & """"
-        End If
-    Next r
-    
-    strSQLExists = "select barcode, fname, lname, licence_code, print_status, status from requests where barcode in (" & serial_barcodes & ") order by barcode asc;"
-    
-    Set rst = DB.OpenRecordset(strSQLExists)
+    batchSize = getConfig("QueryBatchSize")
+    l = 0
+    r = 0
     i = 0
-    ReDim rows(0 To rst.RecordCount - 1)
-    rst.MoveFirst
-    Do Until rst.EOF = True
-        Set rows(i) = New requests_dao
-        rows(i).barcode = rst.Fields("barcode").value
-        rows(i).firstName = rst.Fields("fname").value & ""
-        rows(i).lastName = rst.Fields("lname").value & ""
-        rows(i).licenceCode = rst.Fields("licence_code").value & ""
-        rows(i).printStatus = rst.Fields("print_status").value & ""
-        rows(i).status = rst.Fields("status").value & ""
-        rst.MoveNext
-        i = i + 1
-    Loop
+    ' Serialize the barcodes to make parameter in the query
+    ' We do not expect more than 650 rows, let's initialize this table with the maximum number of rows
+    ReDim rows(0 To UBound(data))
 
+    While l < UBound(rows)
+
+        ' identify the upper limit
+        r = l + batchSize - 1 ' 0 based
+        If r > UBound(rows) Then
+            r = UBound(rows)
+        End If
+        serial_barcodes = ""
+        For m = l To r
+            If serial_barcodes = "" Then
+                serial_barcodes = """" & data(m).barcode & """"
+            Else
+                serial_barcodes = serial_barcodes & ",""" & data(m).barcode & """"
+            End If
+        Next m
+    
+        strSQLExists = "select barcode, fname, lname, licence_code, print_status, status from requests where barcode in (" & serial_barcodes & ") order by barcode asc;"
+    
+        Set rst = DB.OpenRecordset(strSQLExists)
+
+        If rst.RecordCount > 0 Then
+            rst.MoveFirst
+            Do Until rst.EOF = True
+                Set rows(i) = New requests_dao
+                rows(i).barcode = rst.Fields("barcode").value
+                rows(i).firstName = rst.Fields("fname").value & ""
+                rows(i).lastName = rst.Fields("lname").value & ""
+                rows(i).licenceCode = rst.Fields("licence_code").value & ""
+                rows(i).printStatus = rst.Fields("print_status").value & ""
+                rows(i).status = rst.Fields("status").value & ""
+                rst.MoveNext
+                i = i + 1
+            Loop
+        End If
+        l = r + 1
+    Wend
+    If i = 0 Then
+        ReDim rows(0 To 0)
+    Else
+        ReDim Preserve rows(0 To i - 1)
+    End If
     Set rst = Nothing
     getMatchedBarcodes = rows
 End Function
